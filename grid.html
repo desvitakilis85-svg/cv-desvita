@@ -1,0 +1,207 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CV Desvita Christi Kilis</title>
+
+<style>
+
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:40px;
+    background:#4b5320;
+    color:white;
+}
+
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:auto auto auto;
+    gap:20px;
+    max-width:1000px;
+    margin:auto;
+
+    grid-template-areas:
+    "header header header"
+    "tentang pendidikan skill"
+    "pengalaman pengalaman kontak";
+}
+
+.header{
+    grid-area:header;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#2f3a16;
+    padding:20px;
+    border-radius:10px;
+}
+
+.header img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+.tentang{grid-area:tentang;}
+.pendidikan{grid-area:pendidikan;}
+.pengalaman{grid-area:pengalaman;}
+.skill{grid-area:skill;}
+.kontak{grid-area:kontak;}
+
+
+.tentang,
+.pendidikan,
+.pengalaman,
+.skill,
+.kontak{
+    padding:20px;
+    border-radius:10px;
+}
+
+.tentang{background:#6a8bd4;}
+.pendidikan{background:#7fa3e6;}
+.pengalaman{background:#4e78c2;}
+.skill{background:#2f5aa5;}
+.kontak{background:#244480;}
+
+ul{
+    padding-left:20px;
+}
+
+
+@media (max-width:768px){
+
+.container{
+    grid-template-columns:1fr;
+
+    grid-template-areas:
+    "header"
+    "tentang"
+    "pendidikan"
+    "pengalaman"
+    "skill"
+    "kontak";
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+
+<div class="header">
+
+<img src="foto.jpg" alt="Foto Desvita">
+
+<div>
+<h1>DESVITA CHRISTI KILIS</h1>
+<p>Mahasiswa</p>
+</div>
+
+</div>
+
+
+
+<div class="tentang">
+
+<h2>TENTANG SAYA</h2>
+
+<p>
+Saya adalah mahasiswa yang memiliki minat dalam pengembangan web
+dan desain antarmuka. Saya senang mempelajari teknologi baru
+dan membuat tampilan website yang menarik serta mudah digunakan.
+</p>
+
+</div>
+
+
+
+<div class="pendidikan">
+
+<h2>PENDIDIKAN</h2>
+
+<p>Politeknik Negeri Manado – Jurusan Teknik Elektro, Program Studi D4 Teknik Informatika</p>
+
+<p>SMK Negeri 1 Manado – Jurusan Teknik Komputer dan Jaringan (TKJ)</p>
+
+<p>SMP Negeri 2 Manado</p>
+
+<p>SD Negeri 30 Manado</p>
+
+</div>
+
+
+
+<div class="pengalaman">
+
+<h2>PENGALAMAN</h2>
+
+<ul>
+
+<li>Mendesain UI dashboard modern dan minimalis di Figma</li>
+
+<li>Membuat topologi jaringan menggunakan Cisco Packet Tracer</li>
+
+<li>Membuat website portofolio pribadi menggunakan HTML5</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="skill">
+
+<h2>SKILL</h2>
+
+<ul>
+
+<li>HTML</li>
+<li>Figma</li>
+<li>Python</li>
+<li>Canva</li>
+<li>MySQL</li>
+<li>Cisco Packet Tracer</li>
+<li>Bahasa C</li>
+<li>Microsoft Office</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="kontak">
+
+<h2>KONTAK</h2>
+
+<p>Email: desvitakilis85@gmail.com</p>
+<p>Instagram: @dkilis_</p>
+
+<br>
+
+<a href="kontak.html">
+<button>Hubungi Saya</button>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
+```
